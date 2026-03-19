@@ -1,0 +1,11 @@
+[general]
+ignore=body-is-missing
+
+[title-max-length]
+line-length=72
+
+[title-match-regex]
+regex=^(feat|fix|docs|refactor|test|build|ci|chore)(\([a-z0-9._-]+\))?!?: .+$
+
+[ignore-by-title]
+regex=^(Merge|Revert)

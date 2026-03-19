@@ -1,0 +1,25 @@
+name: Gitlint
+
+on:
+  pull_request:
+
+jobs:
+  gitlint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install gitlint
+        run: pip install gitlint
+
+      - name: Lint commit messages
+        run: gitlint --config .gitlint --commits origin/${{ github.base_ref }}..HEAD
