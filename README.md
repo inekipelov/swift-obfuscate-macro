@@ -7,7 +7,7 @@ A Swift macro package that obfuscates string literals at compile time.
 ## Install
 
 ```swift
-.package(url: "https://github.com/inekipelov/swift-obfuscate-macro", branch: "main")
+.package(url: "https://github.com/inekipelov/swift-obfuscate-macro", from: "1.0.0")
 ```
 
 ## Use
