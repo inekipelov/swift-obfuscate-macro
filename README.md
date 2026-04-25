@@ -10,12 +10,6 @@ A Swift macro package that obfuscates string literals at compile time.
   <a href="https://developer.apple.com/visionos/"><img src="https://img.shields.io/badge/visionOS-1.0+-CAFC63?logo=apple" alt="visionOS 1.0+"></a>
 </p>
 
-## Git Hook
-
-```sh
-git config core.hooksPath .githooks
-```
-
 ## Usage
 
 ```swift
